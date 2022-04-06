@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <h1 id="title">Customer Satisfaction Survey</h1>
+
+      <p id="description">
+        Help us serve our customers better. Your feedbacks are valued.
+      </p>
+    </header>
+
+    <form action="" id="survey-form">
+      <div class="form-group">
+        <label for="name" id="name-label">Name:</label>
+        <input
+          type="text"
+          name="name"
+          id="name"
+          class="form-control"
+          placeholder="Enter name"
+          required
+        />
+      </div>
+
+      <div class="form-group">
+        <label for="email" id="email-label">Email:</label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          class="form-control"
+          placeholder="Enter email"
+          required
+        />
+      </div>
+
+      <div class="form-group">
+        <label for="age" id="number-label">Age:</label>
+        <input
+          type="number"
+          name="age"
+          id="number"
+          min="0"
+          max="100"
+          placeholder="Enter age"
+        />
+      </div>
+
+      <div class="form-group">
+        <label for="dropdown" id="dropdown">Employment Status:</label>
+        <select name="dropdown" id="dropdown" class="form-control">
+          <option value disabled selected>Select option</option>
+          <option value="Employed">Employed</option>
+          <option value="Self-employed">Self-employed</option>
+          <option value="Unemployed">Unemployed</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <p>How long have you been a customer of our company?</p>
+
+        <label
+          ><input
+            type="radio"
+            name="how-long"
+            class="input-radio"
+            value="less-than-5"
+            checked
+          />Less than 5 years</label
+        >
+        <label
+          ><input
+            type="radio"
+            name="how-long"
+            class="input-radio"
+            value="more-than-5"
+          />More than 5 years</label
+        >
+      </div>
+
+      <div class="form-group">
+        <p>
+          Which of the following words would you describe our product? Select
+          all that apply.
+        </p>
+
+        <label
+          ><input
+            type="checkbox"
+            class="input-checkbox"
+            value="reliable"
+            name="product"
+          />Reliable</label
+        >
+        <label
+          ><input
+            type="checkbox"
+            class="input-checkbox"
+            value="high-quality"
+            name="product"
+          />High quality</label
+        >
+        <label
+          ><input
+            type="checkbox"
+            class="input-checkbox"
+            value="useful"
+            name="product"
+          />Useful</label
+        >
+        <label
+          ><input
+            type="checkbox"
+            class="input-checkbox"
+            value="overpriced"
+            name="product"
+          />Overpriced</label
+        >
+        <label
+          ><input
+            type="checkbox"
+            class="input-checkbox"
+            value="unreliable"
+            name="product"
+          />Unreliable</label
+        >
+        <label
+          ><input
+            type="checkbox"
+            class="input-checkbox"
+            value="impractical"
+            name="product"
+          />Impractical</label
+        >
+      </div>
+
+      <div class="form-group">
+        <p>Comments/Suggestions?</p>
+
+        <textarea name="comment" id="comment" cols="30" rows="10"></textarea>
+      </div>
+
+      <div class="form-group">
+        <button type="submit" id="submit">Submit</button>
+      </div>
+    </form>
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+</html>
